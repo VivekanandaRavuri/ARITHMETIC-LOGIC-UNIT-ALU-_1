@@ -1,5 +1,9 @@
 # ARITHMETIC-LOGIC-UNIT-ALU-_1
 
+
+
+
+
 module ALU (
     input [7:0] A,
     input [7:0] B,
@@ -10,7 +14,6 @@ module ALU (
     output Negative
 );
     reg C_out;
-
     always @(*) begin
         case (Control)
             3'b000: {C_out, Result} = A + B;       
