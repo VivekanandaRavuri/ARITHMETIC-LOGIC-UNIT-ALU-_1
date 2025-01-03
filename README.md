@@ -13,12 +13,12 @@ module ALU (
 
     always @(*) begin
         case (Control)
-            3'b000: {C_out, Result} = A + B;       // Addition
-            3'b001: {C_out, Result} = A - B;       // Subtraction
-            3'b010: Result = A & B;                // AND
-            3'b011: Result = A | B;                // OR
-            3'b100: Result = ~A;                   // NOT
-            default: Result = 8'b0;                // Default
+            3'b000: {C_out, Result} = A + B;       
+            3'b001: {C_out, Result} = A - B;       
+            3'b010: Result = A & B;              
+            3'b011: Result = A | B;            
+            3'b100: Result = ~A;                  
+            default: Result = 8'b0;                
         endcase
     end
 
